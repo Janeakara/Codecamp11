@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let obj = {};
+        let salaries = {
+            John: 100,
+            Ann: 400,
+            Pete: 420
+        };
+        // obj.name = "Sonter";
+        // obj.surname = "Pakorn";
+        // obj.name = "Boy";
+        // delete obj.name;
+        // console.log(obj)
+
+        // function sum(obj) {
+        //     let totalsum = 0;
+        //     for (let k in obj) {
+        //         totalsum += obj[k]
+        //     }
+        //     return totalsum
+        // }
+
+        // console.log(sum(salaries))
+
+        function multiplyNumberic(obj, times) {
+            for (let k in obj) {
+                if (typeof(obj[k]) !== "number") continue;
+                obj[k] *= times;
+            }
+        }
+
+        multiplyNumberic(salaries, 2)
+        console.log(salaries)
+    </script>
+</body>
+</html>

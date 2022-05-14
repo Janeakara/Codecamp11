@@ -1,0 +1,21 @@
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h2{
+            font-size: 3em;
+            text-align: center;
+            color: aquamarine;
+            background-color: aliceblue;
+            width: 40%;
+        }
+        div{
+            background-color: brown;
+            display: flex;
+            justify-content: center;
+            margin: 40px auto;
+        }
+        body{
+            background-color: bisque;
+        }
